@@ -1,7 +1,3 @@
-Certainly! Here's your **Employee Attrition Analysis** README content converted into **plain text** (no markdown formatting or special characters):
-
----
-
 Employee Attrition Analysis
 
 Goal: Identify the key factors contributing to employee turnover and help management improve retention.
@@ -23,6 +19,8 @@ Key Insights:
 * Work-life balance and compensation had strong influence.
 
 Dashboard Preview:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/80a167a4-faa7-4b9d-ae44-aba586a8083b" />
+
 
 Files Included:
 
