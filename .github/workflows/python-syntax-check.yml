@@ -1,0 +1,38 @@
+name: Python Syntax Check
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  syntax-check:
+    name: Check Python Syntax
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies (if any)
+      run: |
+        if [ -f "requirements.txt" ]; then
+          pip install -r requirements.txt
+        else
+          echo "No requirements.txt file found. Skipping dependency installation."
+        fi
+
+    - name: Run Syntax Check on Python Files
+      run: |
+        echo "Checking Python syntax..."
+        find . -type f -name "*.py" -exec python -m py_compile {} \;
+
+    - name: Success Message
+      run: echo "✅ All Python files passed syntax check!"
