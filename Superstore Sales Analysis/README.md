@@ -21,5 +21,3 @@ Files Included:
 
 * superstore_sql_queries.sql
 * superstore_analysis_python.ipynb
-
-Let me know if you want to merge this with your portfolio README or create a separate one for this project folder.
