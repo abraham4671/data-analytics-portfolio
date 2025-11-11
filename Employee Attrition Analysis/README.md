@@ -27,5 +27,3 @@ Files Included:
 * employee_data_queries.sql
 * employee_eda_python.ipynb
 * employee_attrition_dashboard.twbx
-
-Let me know if you'd like this adapted for another project or formatted in another way (PDF, doc, etc.).
